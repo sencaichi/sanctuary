@@ -1,4 +1,18 @@
 import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import swimming from "./swimming.json";
-import { Loader } from "../../styles/utils.module.css";
+import utilStyles from "../../styles/utils.module.css";
+
+export default function Loading() {
+  return (
+    <div className={utilStyles.Loader}>
+      <Player
+        autoplay
+        loop
+        src={swimming}
+        style={{ height: '50vH' }}
+      >
+      </Player>
+    </div>
+  )
+}
