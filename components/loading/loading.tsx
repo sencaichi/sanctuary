@@ -5,7 +5,10 @@ import utilStyles from "../../styles/utils.module.css";
 
 export default function Loading() {
   return (
-    <div className={utilStyles.Loader}>
+    <div
+      className={utilStyles.Loader}
+      style={{height: '100vH'}
+    }>
       <Player
         autoplay
         loop
