@@ -72,3 +72,12 @@
     font-size: clamp(100px, 15vw, 15vw);
   }
 }
+
+.aboutFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 10px 25px 48px 0;
+  width: 100%;
+  color: #080911;
+}

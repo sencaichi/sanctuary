@@ -15,7 +15,7 @@ export default function Layout({
   home?: boolean
 }) {
   return (
-    <div className={styles.container}>
+    <div className={utilStyles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -31,7 +31,7 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={utilStyles.header}>
         {home ? (
           <>
             <Image
@@ -68,7 +68,7 @@ export default function Layout({
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className={utilStyles.backToHome}>
           <Link href="/">
             <a>← Back  to home</a>
           </Link>
