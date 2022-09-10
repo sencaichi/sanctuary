@@ -22,4 +22,4 @@ $breakpoints: (
   @media only screen and (#{$type}-width: $width) {
     @content;
   }
-}
+};
