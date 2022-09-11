@@ -1,7 +1,7 @@
 import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import swimming from "./swimming.json";
-import utilStyles from "../../styles/utils.scss";
+import utilStyles from "../../styles/utils.module.scss";
 
 export default function Loading() {
   return (

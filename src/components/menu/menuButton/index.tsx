@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import { MenuContext } from "../menuManager";
 import cn from "classnames";
 
-import "./style.scss";
-
 export default function MenuButton() {
   const { setOpen, open } = useContext(MenuContext);
 
@@ -13,5 +11,6 @@ export default function MenuButton() {
         <span />
       </button>
     </div>
-  )
+  );
 }
+
