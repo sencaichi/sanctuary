@@ -69,7 +69,7 @@ import MenuManager from "../components/menu/menuManager";
 
 // import "../styles/home.scss";
 
-const Home = () => {
+const Home = (pageProps: any) => {
   return (
       <MenuManager>
 

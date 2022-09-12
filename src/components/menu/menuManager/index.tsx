@@ -5,7 +5,7 @@ export const MenuContext = createContext({
   setOpen: (open: boolean) => {},
 });
 
-export default function MenuManager(props) {
+export default function MenuManager(props: { children: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal; }) {
   const [open, setOpen] = useState(false);
 
   return (
