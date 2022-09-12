@@ -39,11 +39,13 @@ import Link from "next/link";
 
 const internalLinks = [
   {
-    url: routes[0].path,
-    name: routes[0].name,
-    component: routes[0].component,
-    img:
-      "https://images.unsplash.com/photo-1615713170963-2595d2c721bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+    // url: routes[0].path,
+    // name: routes[0].name,
+    // component: routes[0].component,
+    // img:
+    //   "https://images.unsplash.com/photo-1615713170963-2595d2c721bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+    url: "/about",
+    name: "About",
   },
 ]
 //   {
@@ -81,7 +83,9 @@ export default function MenuContent() {
           <ul className="internal-nav-links">
             {internalLinks.map((link) => (
               <li key={link.url}>
-                <Link href={link.url}>{link.name}</Link>
+                <Link href={link.url}>
+                  <a>{link.name}</a>
+                </Link>
               </li>
             ))}
           </ul>

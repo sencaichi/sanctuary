@@ -3,7 +3,7 @@ import IPage from "../interface/page";
 import { motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../config/transition";
 
-const About: React.FunctionComponent<IPage> = (props) => {
+export default function About(props: any) {
   return (
     <motion.div
       animate="in"
@@ -12,9 +12,9 @@ const About: React.FunctionComponent<IPage> = (props) => {
       variants={fadeVariant}
       transition={fadeTransition}
     >
-      <div>
-        <h2>About</h2>
-          <div>
+      <div className="aboutFlex">
+        <h2 className="label">About</h2>
+          <div className="desc">
             <h2>
               <span style={{ fontStyle: "italic "}}>Welcome to my portfolio!</span>
             </h2>
@@ -33,5 +33,3 @@ const About: React.FunctionComponent<IPage> = (props) => {
 
   )
 }
-
-export default About;

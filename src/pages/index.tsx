@@ -61,25 +61,45 @@
 //   );
 // }
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import { pageData } from "../data";
+import {
+  BrowserRouter,
+  Route,
+} from "react-router-dom";
 import Header from "../components/header/header";
-
+import Loading from "../components/loading/loading";
 import MenuManager from "../components/menu/menuManager";
-
+import Navbar from "../components/navbar";
 // import "../styles/home.scss";
 
 const Home = (pageProps: any) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const delay = () => {
+      setTimeout(() => setLoading(false), 1500);
+    };
+    delay();
+    return () => console.log("Unmounting...");
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
       <MenuManager>
-
+      {/* <BrowserRouter> */}
       <Header />
+      {/* <Navbar name={"Navbar"}/> */}
       <div className="main-container" id="main-container">
         <h1>
           Bleu <br /> Blanc <br /> Studio
         </h1>
       </div>
-      </MenuManager>
+      {/* </BrowserRouter> */}
+      </ MenuManager>
   );
 };
 export default Home;

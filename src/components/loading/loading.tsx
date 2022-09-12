@@ -6,7 +6,7 @@ import utilStyles from "../../styles/utils.module.scss";
 export default function Loading() {
   return (
     <div
-      className={utilStyles.Loader}
+      className="loader"
       style={{height: '100vH'}
     }>
       <Player
