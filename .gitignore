@@ -7,7 +7,6 @@
 
 # testing
 /coverage
-/random.js
 
 # next.js
 /.next/
