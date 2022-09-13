@@ -2,6 +2,8 @@ import React from "react";
 import IPage from "../interface/page";
 import { motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../config/transition";
+import Menu from "../components/menu";
+import MenuManager from "../components/menu/menuManager";
 
 export default function About(props: any) {
   return (
@@ -12,8 +14,12 @@ export default function About(props: any) {
       variants={fadeVariant}
       transition={fadeTransition}
     >
+      <MenuManager>
+      <div className="menu-wrapper">
+        <Menu />
+        </div>
       <div className="aboutFlex">
-        <h2 className="label">About</h2>
+        <h1 className="label">About</h1>
           <div className="desc">
             <h2>
               <span style={{ fontStyle: "italic "}}>Welcome to my portfolio!</span>
@@ -29,6 +35,8 @@ export default function About(props: any) {
             </p>
           </div>
       </div>
+
+      </MenuManager>
     </motion.div>
 
   )

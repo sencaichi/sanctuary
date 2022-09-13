@@ -71,6 +71,7 @@ import Header from "../components/header/header";
 import Loading from "../components/loading/loading";
 import MenuManager from "../components/menu/menuManager";
 import Navbar from "../components/navbar";
+import Menu from "../components/menu";
 // import "../styles/home.scss";
 
 const Home = (pageProps: any) => {
@@ -94,6 +95,7 @@ const Home = (pageProps: any) => {
       <MenuManager>
       {/* <BrowserRouter> */}
       <Header />
+      <Menu />
       {/* <Navbar name={"Navbar"}/> */}
       <div className="main-container" id="main-container">
           <h1>
