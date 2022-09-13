@@ -88,16 +88,20 @@ const Home = (pageProps: any) => {
     return <Loading />;
   }
 
+  const text = ["Bleu", "Blanc", "Studio"];
+
   return (
       <MenuManager>
       {/* <BrowserRouter> */}
       <Header />
       {/* <Navbar name={"Navbar"}/> */}
       <div className="main-container" id="main-container">
-        <h1>
-          Bleu <br /> Blanc <br /> Studio
-        </h1>
-      </div>
+          <h1>
+            {text.map(word => (
+              <div>{word} <br /></div>
+            ))}
+          </h1>
+          </div>
       {/* </BrowserRouter> */}
       </ MenuManager>
   );
