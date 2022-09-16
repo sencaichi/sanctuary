@@ -3,7 +3,7 @@ import Menu from "../menu";
 
 export default function Header() {
   return (
-    <div>
+    <div className="brand-description">
       <p>ur so nonbinary</p>
     </div>
   )

@@ -72,7 +72,6 @@ import Loading from "../components/loading/loading";
 import MenuManager from "../components/menu/menuManager";
 import Navbar from "../components/navbar";
 import Menu from "../components/menu";
-// import "../styles/home.scss";
 
 const Home = (pageProps: any) => {
   const [loading, setLoading] = useState(true);
