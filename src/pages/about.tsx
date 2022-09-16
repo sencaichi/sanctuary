@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../config/transition";
 import Menu from "../components/menu";
 import MenuManager from "../components/menu/menuManager";
+import Header from "../components/header/header";
 
 export default function About(props: any) {
   return (
@@ -15,9 +16,7 @@ export default function About(props: any) {
       transition={fadeTransition}
     >
       <MenuManager>
-      <div className="menu-wrapper">
         <Menu />
-        </div>
       <div className="aboutFlex">
         <h1 className="label">About</h1>
           <div className="desc">
@@ -35,7 +34,6 @@ export default function About(props: any) {
             </p>
           </div>
       </div>
-
       </MenuManager>
     </motion.div>
 

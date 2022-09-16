@@ -4,7 +4,7 @@ import MenuContent from "./menuContent";
 
 export default function Menu() {
   return (
-    <div className="menu-wrapperr">
+    <div className="menu-nav-container">
       <MenuButton />
       <MenuContent />
     </div>

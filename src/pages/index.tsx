@@ -93,20 +93,20 @@ const Home = (pageProps: any) => {
 
   return (
       <MenuManager>
-      {/* <BrowserRouter> */}
-      <Header />
       <Menu />
+      <Header />
       {/* <Navbar name={"Navbar"}/> */}
-      <div className="main-container" id="main-container">
+      <div className="main-container"
+      id="main-container">
           <h1>
             {text.map(word => (
               <div>{word} <br /></div>
             ))}
           </h1>
-          </div>
-      {/* </BrowserRouter> */}
-      </ MenuManager>
+        </div>
+      </MenuManager>
   );
 };
+
 export default Home;
 
