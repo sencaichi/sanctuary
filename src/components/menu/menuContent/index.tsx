@@ -84,7 +84,7 @@ export default function MenuContent() {
             {internalLinks.map((link) => (
               <li key={link.url}>
                 <Link href={link.url}>
-                  <a>{link.name}</a>
+                  <i>{link.name}</i>
                 </Link>
               </li>
             ))}

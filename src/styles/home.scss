@@ -128,7 +128,7 @@ body {
       li {
         margin-bottom: 20px;
 
-        a {
+        i {
           font-size: clamp(32px, 4vw, 52px);
           line-height: 1.1em;
           transform: translate(-100%);
@@ -137,9 +137,10 @@ body {
         }
 
         &:hover {
-          cursor: pointer;
-          a {
+          cursor: crosshair;
+          i {
             font-weight: 800;
+            color: rgb(144, 195, 144);
           }
           img {
             opacity: 1;
