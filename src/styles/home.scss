@@ -5,8 +5,8 @@
 $bg-color: white;
 
 body {
-  border-top: 1px solid #4c47a0;
-  border-bottom: 1px solid #4c47a0;
+  border-top: 1px solid rgb(144, 195, 144);
+  border-bottom: 1px solid rgb(144, 195, 144);
   overflow: hidden;
   padding: 0 0 15px 0;
   @media (max-width: 768px) {
@@ -38,13 +38,13 @@ body {
   display: flex;
   align-items: flex-end;
   width: calc(100vw - 50px); //margin, padding and border
-  margin: 0 auto;
+  margin: auto;
 
 
   h1 {
     font-size: clamp(100px, 15vw, 15vw);
     font-weight: bold;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     max-width: 70vw;
     text-transform: uppercase;
     font-family: "Anton", sans-serif;
@@ -52,6 +52,7 @@ body {
     transform: translateY(0);
     transition: transform 0.75s cubic-bezier(0.77, 0, 0.175, 1);
     &:hover {
+      cursor: crosshair;
       transform: translate(-40px);
     }
   }
@@ -114,6 +115,13 @@ body {
           }
         }
       }
+    }
+
+    .page-container {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      width: calc(100vw - 50px);
     }
 
     .menu-nav-container {
@@ -200,6 +208,27 @@ body {
     }
   }
 }
+
+h2 {
+  color: #0f1433;
+  font-family: "Tiempos Fine", "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 140%;
+  padding: 0;
+  margin: 0px;
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
+
+  &.label {
+    padding-bottom: 20px;
+    width: 200px;
+    display: block;
+  }
+}
+
 
 .brand-description {
   position: fixed;
