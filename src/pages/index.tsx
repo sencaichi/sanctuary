@@ -24,7 +24,7 @@ const Home = (pageProps: any) => {
     return <Loading />;
   }
 
-  const text = ["Bleu", "Blanc", "Studio"];
+  const text = ["Your", "Sanc-", "-Tuary"];
 
   return (
       <MenuManager>
